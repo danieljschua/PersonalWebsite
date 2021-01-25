@@ -40,6 +40,15 @@ body {
 	position: relative;
 	bottom: 2px;
 }
+* .hover-link-button {
+	padding: .75em .75em;
+	border: 1px solid white;
+	border-radius: 20px;
+}
+* .hover-link-button:hover {
+	color: var(--main-white);
+	background-color: #dddddd11;
+}
 
 /* Navbar */
 #navbar {
@@ -99,11 +108,11 @@ body {
 .subheadings {
 	font: var(--montserrat);
 	color: var(--alt-green);
-	font-size: 50px;
+	font-size: 40px;
 }
 
 .default-padding {
-	padding: 2em 4em 7em 4em;
+	padding: 1em 4em 7em 4em;
 }
 .flex-around {
 	display: flex;
@@ -119,8 +128,20 @@ body {
 .right {
 	width: 50%;
 }
+.scroll-down-link {
+	width: 30%;
+	margin-left: 3em;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	font-size: 16px;
+}
 
 /* intro */
+#intro {
+	padding-top: 0;
+}
 #intro h1,
 h2,
 h3 {
@@ -145,12 +166,7 @@ h3 {
 #about {
 	padding-bottom: 8em;
 }
-/* #about h2 {
-	font-family: var(--montserrat);
-	font-size: 50px;
-	color: var(--alt-green);
-} */
-#about p {
+#about main p {
 	font-size: 20px;
 }
 #pfp {
@@ -160,8 +176,39 @@ h3 {
 }
 
 /* Skills */
+#skills-table {
+	width: 60%;
+	margin: 5em auto;
+}
+#skills-table th {
+	text-align: left;
+	border-bottom: 1px solid var(--main-white);
+	border-right-width: 3px;
+}
+#skills-table tbody tr:first-child td {
+	padding-top: 10px;
+}
+#skills-table tbody tr:nth-child(odd) {
+	color: var(--alt-green);
+}
+#skills-table tbody tr:nth-child(even) {
+	color: var(--main-white);
+}
+
+/* Projects */
 
 /* Footer */
 footer {
+	width: 80%;
 	margin-top: 500px;
+	margin: auto;
+	padding: 4em;
+
+	display: flex;
+	justify-content: center;
+}
+footer small {
+	width: 40%;
+	padding: 1em;
+	text-align: center;
 }

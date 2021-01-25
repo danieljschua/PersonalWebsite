@@ -28,7 +28,7 @@
         <li><a href="#skills" class="links hover-color">Skills</a></li>
         <li><a href="#projects" class="links hover-color">Projects</a></li>
       </ul>
-      <a href="#contact" class="links hover-color">Contact</a>
+      <a href="#contact" class="links hover-color hover-link-button">Contact</a>
     </nav>
   </header>
 
@@ -78,17 +78,16 @@
       <h2>Hi, my name is</h2>
       <h1>Daniel Chua.</h1>
       <h3>I'm a high school student interested in STEM.</h3>
-      <div id="scroll-down" class="flex-center">
+      <a href="#about"
+        class="links hover-color scroll-down-link animate__animated animate__pulse animate__infinite animate__slow">
         <img src="assets/v.png" alt="down-arrow" class="v-png">
-        <a class="links hover-color" href="#about">Scroll down!</a>
+        <p>Scroll down!</p>
         <img src="assets/v.png" alt="down-arrow" class="v-png">
-      </div>
+      </a>
     </section>
 
     <section id="about" class="default-padding">
-      <h2 class="subheadings">:~$ whoami
-        <span class="animate__animated animate__flash animate__slow animate__infinite">l</span>
-      </h2>
+      <h2 class="subheadings">danielchua@MacBook-Pro ~ $ whoami</h2>
       <div class="flex-around">
         <span class="left">
           <main>
@@ -96,8 +95,9 @@
               Hi! I'm Daniel. <br> <br>
               Currently, I attend Thomas Jefferson High School for Science and Technology. My academic interests are
               mainly in mathematics, science, electronics, and computer science. However, I also enjoy learning Spanish
-              and music. <br> <br>
-              Outside of school, I love eating, swimming, making music, watching movies, and coding. <br> <br>
+              and playing percussion in band. <br> <br>
+              Outside of school, I swim around 10 hours each week. I also do programming and web development as hobbies.
+              To relax, I eat, watch movies, and play games with my family. <br> <br>
             </p>
           </main>
         </span>
@@ -105,31 +105,103 @@
           <img src="assets/me.jpeg" alt="Photo of me. I need a better picture lol." id="pfp">
         </span>
       </div>
+      <a href="#skills"
+        class="links hover-color scroll-down-link animate__animated animate__pulse animate__infinite animate__slow">
+        <img src="assets/v.png" alt="down-arrow" class="v-png">
+        <p>Scroll down!</p>
+        <img src="assets/v.png" alt="down-arrow" class="v-png">
+      </a>
     </section>
 
     <section class="default-padding" id="skills">
-      <h2 class="subheadings">:~$ echo $SKILLS
-        <span class="animate__animated animate__flash animate__slow animate__infinite">l</span>
-      </h2>
-      <ul>
-        <li>HTML, (S)CSS</li>
-        <li>Flask</li>
-        <li>Python, Java</li>
-        <li>Git/GitHub</li>
-        <li>Arduino</li>
-      </ul>
+      <h2 class="subheadings">danielchua@MacBook-Pro ~ $ ls /skills/</h2>
+      <table id="skills-table">
+        <thead>
+          <tr>
+            <th style="width: 50%">Software</th>
+            <th style="width: 50%">Other</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Git/GitHub</td>
+          </tr>
+          <tr>
+            <td>(S)CSS</td>
+            <td>Arduino</td>
+          </tr>
+          <tr>
+            <td>Limited JS</td>
+          </tr>
+          <tr>
+            <td>Flask</td>
+          </tr>
+          <tr>
+            <td>Limited Django</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- <ul>
+        <li>Software</li>
+        <ul>
+          <li>Front-end</li>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+          <li>Back-end</li>
+          <ul>
+            <li>Flask</li>
+          </ul>
+          <li>General Purpose</li>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+          </ul>
+        </ul>
+        <li>Other</li>
+        <ul>
+          <li>Git/GitHub</li>
+          <li>Arduino</li>
+        </ul>
+      </ul> -->
+      <a href="#projects"
+        class="links hover-color scroll-down-link animate__animated animate__pulse animate__infinite animate__slow">
+        <img src="assets/v.png" alt="down-arrow" class="v-png">
+        <p>Scroll down!</p>
+        <img src="assets/v.png" alt="down-arrow" class="v-png">
+      </a>
     </section>
 
     <section class="default-padding" id="projects">
-
+      <h2 class="subheadings">danielchua@MacBook-Pro ~ $ ls /projects/</h2>
+      <small>Psst! Check out my GitHub by clicking the GitHub icon on the left!</small>
+      <p>Here are some of my projects:</p>
+      <a href="https://santa-tracker-djsc.sites.tjhsst.edu" class="links hover-color">Santa Tracker</a>
+      <a href="#contact"
+        class="links hover-color scroll-down-link animate__animated animate__pulse animate__infinite animate__slow">
+        <img src="assets/v.png" alt="down-arrow" class="v-png">
+        <p>Scroll down!</p>
+        <img src="assets/v.png" alt="down-arrow" class="v-png">
+      </a>
     </section>
 
     <section class="default-padding" id="contact">
+      <h2 class="subheadings">danielchua@MacBook-Pro ~ $ echo "Contact me!"</h2>
 
     </section>
   </div>
 
-  <footer class="space"></footer>
+  <footer>
+    <small>Created and designed by Daniel Chua. Copyright &copy; 2021</small>
+  </footer>
 </body>
 
 </html>
