@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); /* Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"); /* Lato */
+
+/* General */
+:root {
+	--main-bg: #24252a;
+	--main-white: #edf0f1;
+	--alt-blue: #0088a9;
+	--alt-green: #388152;
+
+	--montserrat: "Montserrat", sans-serif;
+	--lato: "Lato", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	background-color: var(--main-bg);
+	color: var(--main-white);
+	font-family: var(--montserrat);
+}
+
+* .links {
+	text-decoration: none;
+	color: var(--main-white);
+}
+* .hover-color {
+	transition: all 0.4s ease 0s;
+}
+* .hover-color:hover {
+	transition: all 0.4s ease 0s;
+	color: var(--alt-blue);
+}
+* .hover-pos:hover {
+	position: relative;
+	bottom: 2px;
+}
+
+/* Navbar */
+#navbar {
+	width: 90%;
+	padding: 2em 1em;
+	margin: auto;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#navbar ul {
+	list-style-type: none;
+}
+#navbar ul li {
+	margin: 0 2em;
+	display: inline-block;
+}
+
+/* Aside */
+#aside-plugs {
+	width: 5%;
+	height: 50%;
+	position: fixed;
+	bottom: 0;
+}
+#aside-plugs ul {
+	list-style-type: none;
+}
+#aside-plugs ul li {
+	height: 1em;
+	width: 1.5em;
+	margin-bottom: 1em;
+
+	position: relative;
+	right: 1.4em;
+}
+.small-svgs {
+	width: 2em;
+}
+.vl {
+	margin: auto;
+	width: 4%;
+	height: 10.5em;
+	position: relative;
+	top: 1em;
+
+	background-color: var(--main-white);
+}
+
+/* Content general */
+#content {
+	width: 90%;
+	margin: auto;
+}
+
+.subheadings {
+	font: var(--montserrat);
+	color: var(--alt-green);
+	font-size: 50px;
+}
+
+.default-padding {
+	padding: 2em 4em 7em 4em;
+}
+.flex-around {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.inline-block {
+	display: inline-block;
+}
+.left {
+	width: 50%;
+}
+.right {
+	width: 50%;
+}
+
+/* intro */
+#intro h1,
+h2,
+h3 {
+	font-family: var(--lato);
+	font-size: 50px;
+}
+#intro h1 {
+	position: relative;
+	right: 6px;
+	font-size: 80px;
+	color: var(--alt-green);
+}
+#intro h3 {
+	font-size: 30px;
+}
+.v-png {
+	width: 20px;
+	display: inline-block;
+}
+
+/* about */
+#about {
+	padding-bottom: 8em;
+}
+/* #about h2 {
+	font-family: var(--montserrat);
+	font-size: 50px;
+	color: var(--alt-green);
+} */
+#about p {
+	font-size: 20px;
+}
+#pfp {
+	border-radius: 20px;
+	float: right;
+	width: 50%;
+}
+
+/* Skills */
+
+/* Footer */
+footer {
+	margin-top: 500px;
+}
