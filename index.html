@@ -1,207 +1,276 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Chua" />
+    <meta name="description" content="Personal website for Daniel Chua" />
+    <meta name="keywords" content="TJHSST, student, programming, coding" />
+    <!-- Don't judge lol -->
 
-  <!-- SEO (idk why) -->
-  <meta name="author" content="Daniel Chua">
-  <meta name="description" content="Personal website for Daniel Chua">
-  <meta name="keywords" content="TJHSST, student, programming, coding">
+    <title>Daniel Chua</title>
+    <link rel="icon" href="assets/favicon.ico" />
 
-  <title>Daniel Chua</title>
-  <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <!-- animate.css: https://animate.style/ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
 
-  <link rel="stylesheet" href="styles.css" type="text/css">
-  <!-- animate.css (https://animate.style/) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-</head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <a href="index.html" class="links hover-color">Daniel Chua</a>
+        <ul>
+          <li><a href="#about" class="links hover-color">About</a></li>
+          <li><a href="#skills" class="links hover-color">Skills</a></li>
+          <li><a href="#projects" class="links hover-color">Projects</a></li>
+        </ul>
+        <a href="#contact" class="links hover-color hover-link-button">
+          Contact
+        </a>
+      </nav>
+    </header>
 
-<body>
-  <!-- Navbar -->
-  <header>
-    <nav id="navbar">
-      <a href="index.html" class="links hover-color">Daniel Chua</a>
+    <aside id="aside-plugs">
       <ul>
-        <li><a href="#about" class="links hover-color">About</a></li>
-        <li><a href="#skills" class="links hover-color">Skills</a></li>
-        <li><a href="#projects" class="links hover-color">Projects</a></li>
+        <li class="hover-pos">
+          <a
+            href="https://github.com/danieljschua"
+            target="_blank"
+            class="links hover-color"
+          >
+            <!-- GitHub icon from https://brittanychiang.com/ -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              ></path>
+            </svg>
+          </a>
+        </li>
+        <li class="hover-pos">
+          <a
+            href="mailto:chua.s.daniel@gmail.com"
+            target="_blank"
+            class="links hover-color"
+          >
+            <!-- Mail icon from http://svgicons.sparkk.fr/ -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="small-svgs"
+            >
+              <path
+                d="M17.388,4.751H2.613c-0.213,0-0.389,0.175-0.389,0.389v9.72c0,0.216,0.175,0.389,0.389,0.389h14.775c0.214,0,0.389-0.173,0.389-0.389v-9.72C17.776,4.926,17.602,4.751,17.388,4.751 M16.448,5.53L10,11.984L3.552,5.53H16.448zM3.002,6.081l3.921,3.925l-3.921,3.925V6.081z M3.56,14.471l3.914-3.916l2.253,2.253c0.153,0.153,0.395,0.153,0.548,0l2.253-2.253l3.913,3.916H3.56z M16.999,13.931l-3.921-3.925l3.921-3.925V13.931z"
+              ></path>
+            </svg>
+          </a>
+        </li>
+        <li class="hover-pos">
+          <a
+            href="https://www.facebook.com/danieljohn.chua.9"
+            target="_blank"
+            class="links hover-color"
+          >
+            <!-- Mail icon from http://svgicons.sparkk.fr/ -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="small-svgs"
+            >
+              <path
+                fill="none"
+                d="M11.344,5.71c0-0.73,0.074-1.122,1.199-1.122h1.502V1.871h-2.404c-2.886,0-3.903,1.36-3.903,3.646v1.765h-1.8V10h1.8v8.128h3.601V10h2.403l0.32-2.718h-2.724L11.344,5.71z"
+              ></path>
+            </svg>
+          </a>
+        </li>
       </ul>
-      <a href="#contact" class="links hover-link-button">Contact</a>
-    </nav>
-  </header>
+      <div class="vl"></div>
+    </aside>
 
-  <!-- Aside -->
-  <aside id="aside-plugs">
-    <ul>
-      <li>
-        <a href="https://github.com/danieljschua" target="_blank" class="links hover-color hover-pos">
-          <!-- GitHub icon from https://brittanychiang.com/ -->
-          <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path
-              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-            </path>
-          </svg>
+    <!-- Content -->
+    <div id="content">
+      <section id="intro" class="default-padding">
+        <h2>Hi, my name is</h2>
+        <h1>Daniel Chua.</h1>
+        <h3>I'm a high school student interested in STEM.</h3>
+        <a
+          href="#about"
+          class="links hover-color scroll-down-link animate__animated animate__pulse animate__infinite animate__slow"
+        >
+          <img src="assets/v.png" alt="down-arrow" class="v-png" />
+          <p>Scroll down!</p>
+          <img src="assets/v.png" alt="down-arrow" class="v-png" />
         </a>
-      </li>
-      <li>
-        <a href="mailto:chua.s.daniel@gmail.com" target="_blank" class="links hover-color hover-pos">
-          <!-- Mail icon from http://svgicons.sparkk.fr/ -->
-          <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="small-svgs">
-            <path
-              d="M17.388,4.751H2.613c-0.213,0-0.389,0.175-0.389,0.389v9.72c0,0.216,0.175,0.389,0.389,0.389h14.775c0.214,0,0.389-0.173,0.389-0.389v-9.72C17.776,4.926,17.602,4.751,17.388,4.751 M16.448,5.53L10,11.984L3.552,5.53H16.448zM3.002,6.081l3.921,3.925l-3.921,3.925V6.081z M3.56,14.471l3.914-3.916l2.253,2.253c0.153,0.153,0.395,0.153,0.548,0l2.253-2.253l3.913,3.916H3.56z M16.999,13.931l-3.921-3.925l3.921-3.925V13.931z">
-            </path>
-          </svg>
+      </section>
+
+      <section id="about" class="default-padding">
+        <h2 class="subheadings">danielchua@MacBook-Pro ~ $ whoami</h2>
+        <div class="flex-around">
+          <span class="left">
+            <main>
+              <p>
+                Hi! I'm Daniel. <br />
+                <br />
+                Currently, I attend the Thomas Jefferson High School for Science
+                and Technology. My academic interests are mainly in mathematics,
+                science, electronics, and computer science. However, I also
+                enjoy learning Spanish and making music as a percussionist.
+                <br />
+                <br />
+                Outside of school, I swim around 10 hours each week. I also do
+                programming and web development as hobbies. To relax, I eat,
+                watch movies, and play games with my family. <br />
+                <br />
+              </p>
+            </main>
+          </span>
+          <span class="right">
+            <img src="assets/me.jpg" alt="Photo of me" id="pfp" />
+          </span>
+        </div>
+        <a
+          href="#skills"
+          class="links hover-color scroll-down-link animate__animated animate__pulse animate__infinite animate__slow"
+        >
+          <img src="assets/v.png" alt="down-arrow" class="v-png" />
+          <p>Scroll down!</p>
+          <img src="assets/v.png" alt="down-arrow" class="v-png" />
         </a>
-      </li>
-      <li>
-        <a href="https://www.facebook.com/danieljohn.chua.9" target="_blank" class="links hover-color hover-pos">
-          <!-- Mail icon from http://svgicons.sparkk.fr/ -->
-          <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="small-svgs">
-            <path fill="none"
-              d="M11.344,5.71c0-0.73,0.074-1.122,1.199-1.122h1.502V1.871h-2.404c-2.886,0-3.903,1.36-3.903,3.646v1.765h-1.8V10h1.8v8.128h3.601V10h2.403l0.32-2.718h-2.724L11.344,5.71z">
-            </path>
-          </svg>
+      </section>
+
+      <section class="default-padding" id="skills">
+        <h2 class="subheadings">danielchua@MacBook-Pro ~ $ ls /skills/</h2>
+        <table id="skills-table">
+          <thead>
+            <tr>
+              <th style="width: 50%">Software</th>
+              <th style="width: 50%">Other</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>Git/GitHub</td>
+            </tr>
+            <tr>
+              <td>CSS & SCSS</td>
+              <td>Arduino</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+            </tr>
+            <tr>
+              <td>React</td>
+            </tr>
+            <tr>
+              <td>Flask</td>
+            </tr>
+            <tr>
+              <td>Django</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+            </tr>
+            <tr>
+              <td>Java</td>
+            </tr>
+          </tbody>
+        </table>
+        <a
+          href="#projects"
+          class="links hover-color scroll-down-link animate__animated animate__pulse animate__infinite animate__slow"
+        >
+          <img src="assets/v.png" alt="down-arrow" class="v-png" />
+          <p>Scroll down!</p>
+          <img src="assets/v.png" alt="down-arrow" class="v-png" />
         </a>
-      </li>
-    </ul>
-    <div class="vl"></div>
-  </aside>
+      </section>
 
-  <!-- Content -->
-  <div id="content">
-    <section id="intro" class="default-padding">
-      <h2>Hi, my name is</h2>
-      <h1>Daniel Chua.</h1>
-      <h3>I'm a high school student interested in STEM.</h3>
-      <a href="#about"
-        class="links hover-color scroll-down-link animate__animated animate__pulse animate__infinite animate__slow">
-        <img src="assets/v.png" alt="down-arrow" class="v-png">
-        <p>Scroll down!</p>
-        <img src="assets/v.png" alt="down-arrow" class="v-png">
-      </a>
-    </section>
-
-    <section id="about" class="default-padding">
-      <h2 class="subheadings">danielchua@MacBook-Pro ~ $ whoami</h2>
-      <div class="flex-around">
-        <span class="left">
-          <main>
-            <p>
-              Hi! I'm Daniel. <br> <br>
-              Currently, I attend Thomas Jefferson High School for Science and Technology. My academic interests are
-              mainly in mathematics, science, electronics, and computer science. However, I also enjoy learning Spanish
-              and playing percussion in band. <br> <br>
-              Outside of school, I swim around 10 hours each week. I also do programming and web development as hobbies.
-              To relax, I eat, watch movies, and play games with my family. <br> <br>
-            </p>
-          </main>
-        </span>
-        <span class="right">
-          <img src="assets/me.jpeg" alt="Photo of me. I need a better picture lol." id="pfp">
-        </span>
-      </div>
-      <a href="#skills"
-        class="links hover-color scroll-down-link animate__animated animate__pulse animate__infinite animate__slow">
-        <img src="assets/v.png" alt="down-arrow" class="v-png">
-        <p>Scroll down!</p>
-        <img src="assets/v.png" alt="down-arrow" class="v-png">
-      </a>
-    </section>
-
-    <section class="default-padding" id="skills">
-      <h2 class="subheadings">danielchua@MacBook-Pro ~ $ ls /skills/</h2>
-      <table id="skills-table">
-        <thead>
-          <tr>
-            <th style="width: 50%">Software</th>
-            <th style="width: 50%">Other</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>HTML</td>
-            <td>Git/GitHub</td>
-          </tr>
-          <tr>
-            <td>(S)CSS</td>
-            <td>Arduino</td>
-          </tr>
-          <tr>
-            <td>Limited JS</td>
-          </tr>
-          <tr>
-            <td>Flask</td>
-          </tr>
-          <tr>
-            <td>Limited Django</td>
-          </tr>
-          <tr>
-            <td>Python</td>
-          </tr>
-          <tr>
-            <td>Java</td>
-          </tr>
-        </tbody>
-      </table>
-      <!-- <ul>
-        <li>Software</li>
+      <section class="default-padding" id="projects">
+        <h2 class="subheadings">danielchua@MacBook-Pro ~ $ ls /projects/</h2>
+        <p>Here are some of my projects:</p>
         <ul>
-          <li>Front-end</li>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-          <li>Back-end</li>
-          <ul>
-            <li>Flask</li>
-          </ul>
-          <li>General Purpose</li>
-          <ul>
-            <li>Python</li>
-            <li>Java</li>
-          </ul>
+          <li>
+            <a
+              href="https://santa-tracker-djsc.sites.tjhsst.edu"
+              target="_blank"
+              class="links hover-color"
+            >
+              Santa Tracker
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://danieljschua.github.io/weather-api/"
+              target="_blank"
+              class="links hover-color"
+            >
+              Simple Weather App
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://danieljschua.github.io/NewTabPage/"
+              target="_blank"
+              class="links hover-color"
+            >
+              New Tab Page
+            </a>
+          </li>
         </ul>
-        <li>Other</li>
-        <ul>
-          <li>Git/GitHub</li>
-          <li>Arduino</li>
-        </ul>
-      </ul> -->
-      <a href="#projects"
-        class="links hover-color scroll-down-link animate__animated animate__pulse animate__infinite animate__slow">
-        <img src="assets/v.png" alt="down-arrow" class="v-png">
-        <p>Scroll down!</p>
-        <img src="assets/v.png" alt="down-arrow" class="v-png">
-      </a>
-    </section>
 
-    <section class="default-padding" id="projects">
-      <h2 class="subheadings">danielchua@MacBook-Pro ~ $ ls /projects/</h2>
-      <small>Psst! Check out my GitHub by clicking the GitHub icon on the left!</small>
-      <p>Here are some of my projects:</p>
-      <a href="https://santa-tracker-djsc.sites.tjhsst.edu" target="_blank" class="links hover-color">Santa Tracker</a>
-      <a href="#contact"
-        class="links hover-color scroll-down-link animate__animated animate__pulse animate__infinite animate__slow">
-        <img src="assets/v.png" alt="down-arrow" class="v-png">
-        <p>Scroll down!</p>
-        <img src="assets/v.png" alt="down-arrow" class="v-png">
-      </a>
-    </section>
+        <a
+          href="#contact"
+          class="links hover-color scroll-down-link animate__animated animate__pulse animate__infinite animate__slow"
+        >
+          <img src="assets/v.png" alt="down-arrow" class="v-png" />
+          <p>Scroll down!</p>
+          <img src="assets/v.png" alt="down-arrow" class="v-png" />
+        </a>
+      </section>
 
-    <section class="default-padding" id="contact">
-      <h2 class="subheadings">danielchua@MacBook-Pro ~ $ echo "Contact me!"</h2>
+      <section class="default-padding" id="contact">
+        <h2 class="subheadings">
+          danielchua@MacBook-Pro ~ $ echo "Contact me!"
+        </h2>
+        <a
+          href="mailto:chua.s.daniel@gmail.com"
+          target="_blank"
+          class="links hover-color hover-pos"
+        >
+          Email
+        </a>
+      </section>
+    </div>
 
-    </section>
-  </div>
-
-  <footer>
-    <small>Created and designed by Daniel Chua. Copyright &copy; 2021</small>
-  </footer>
-</body>
-
+    <footer>
+      <small>Created and designed by Daniel Chua. Copyright &copy; 2021</small>
+    </footer>
+  </body>
 </html>
